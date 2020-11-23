@@ -1,0 +1,38 @@
+@media (max-width: 758px) {
+    body {
+        font-size: 18px;
+    }
+
+    header .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav {
+        margin: 10px;
+    }
+
+    .filme-principal {
+        height: 80vh;
+        justify-content: flex-end;
+    }
+
+    .filme-principal .wrapper {
+        width: 70%;
+    }
+
+    .botao-filme {
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 759px) and (max-width: 858px) {
+    body {
+        font-size: 20px;
+    }
+
+    .filme-principal {
+        height: 50vh;
+        justify-content: flex-end;
+    }
+}

@@ -1,0 +1,101 @@
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #ffffff;
+    background-color: var(--preto);
+}
+
+header .logo {
+    margin: 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--vermelho);
+}
+
+header .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav a {
+    color: #ffffff;
+    margin-right: 20px;
+}
+
+header nav a:hover {
+    color: #AAA;
+    transition: 0.5s;
+}
+
+/*BANNER PRINCIPAL*/
+
+.filme-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5) 100%), url(/images/bandersnatch.jpg);
+    background-size: cover;
+}
+
+.descricao-filme {
+    margin-bottom: 15px;
+}
+
+.titulo-filme {
+    font-size: 40px;
+}
+
+.botao-filme {
+    padding: 15px 30px;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.botao-filme:hover {
+    background-color: #ffffff;
+    color: var(--preto);
+    transition: 0.5s;
+}
+
+.botao-filme i {
+    margin-right: 5px;
+}
+
+.filme-principal .wrapper {
+    padding: 20px;
+    width: 50%;
+}
+
+/*CARROSSEL FILMES*/
+
+.box-filme {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
